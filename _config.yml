@@ -1,0 +1,61 @@
+title:            Paulo Cavalcanti
+tagline:          Notes and how-tos on the technical things I'm learning
+description: >-
+  Personal blog and knowledge base — short, practical notes on backend,
+  data, devops, and the tools I use day to day.
+url:              'https://paulofbc.github.io'
+baseurl:          ''
+
+remote_theme:     hydecorp/hydejack@v9.2.1
+
+permalink:        /:categories/:year/:month/:title/
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-default-layout
+  - jekyll-redirect-from
+
+paginate:         5
+paginate_path:    '/page-:num/'
+
+defaults:
+  - scope:
+      path:       ''
+      type:       posts
+    values:
+      layout:     post
+
+author:
+  name:           Paulo Cavalcanti
+  email:          fbc.paulo@gmail.com
+
+social:
+  name:           Paulo Cavalcanti
+  links:
+    - https://github.com/paulofbc
+    - https://www.linkedin.com/in/paulo-cavalcanti
+
+menu:
+  - title:        Home
+    url:          /
+  - title:        Posts
+    url:          /posts/
+  - title:        Categories
+    url:          /categories/
+  - title:        CV
+    url:          /cv/
+
+accent_color:     rgb(79,177,186)
+accent_image:
+  background:     rgb(25,52,71)
+  overlay:        true
+
+hydejack:
+  no_search:                true
+  no_third_party_analytics: true
+  no_drawer:                false
+  no_navbar:                false
