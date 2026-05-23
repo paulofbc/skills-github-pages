@@ -1,5 +1,5 @@
 ---
-layout: welcome
+layout: home
 title: Paulo Cavalcanti
 description: >-
   Short, practical notes on the technical things I'm learning — mostly
