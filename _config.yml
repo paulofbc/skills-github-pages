@@ -4,7 +4,7 @@ description: >-
   Personal blog and knowledge base — short, practical notes on backend,
   data, devops, and the tools I use day to day.
 url:              'https://paulofbc.github.io'
-baseurl:          ''
+baseurl:          '/pfbc-blog'
 
 remote_theme:     hydecorp/hydejack@v9.2.1
 
@@ -12,6 +12,7 @@ permalink:        /:categories/:year/:month/:title/
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap

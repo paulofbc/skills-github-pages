@@ -11,5 +11,6 @@ Hi, I'm **Paulo** — a software engineer based in Recife, Brazil. This is
 where I keep working notes on what I'm learning: small how‑tos,
 gotchas, and pointers I want to be able to find again.
 
-Browse [all posts](/posts/), filter by [category](/categories/), or
-read my [CV](/cv/).
+Browse [all posts]({{ '/posts/' | relative_url }}), filter by
+[category]({{ '/categories/' | relative_url }}), or read my
+[CV]({{ '/cv/' | relative_url }}).

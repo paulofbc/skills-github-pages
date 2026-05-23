@@ -5,7 +5,7 @@ permalink: /cv/
 description: Paulo Cavalcanti — Software Engineer. Backend, Python, distributed systems.
 ---
 
-[**Download PDF**](/assets/cv.pdf){:.button}
+[**Download PDF**]({{ '/assets/cv.pdf' | relative_url }}){:.button}
 
 ## Profile
 
