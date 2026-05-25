@@ -102,19 +102,19 @@ prose — only adjust frontmatter and the leading H1. If the body has no
 TL;DR and looks like it would benefit from one, you may suggest one to
 the user but do not invent content on your own.
 
-**Insert a table-of-contents marker** so the post gets a floating TOC
-(see `_layouts/post-with-toc.html`). Add these two lines on their own,
-separated by blank lines from surrounding content:
+**Insert a table-of-contents marker** at the very top of the body
+(before the TL;DR / first heading). Hydejack anchors its sidebar TOC
+at the marker's vertical position, so placing it at the top pins
+the TOC to the top of the page on wide screens.
 
 ```markdown
 * TOC
 {:toc}
 ```
 
-Placement: right after the TL;DR blockquote if one exists; otherwise
-at the very top of the body, before the first heading. Kramdown
-expands the marker into a `<ul id="markdown-toc">` at build time, and
-the post layout's CSS floats it on wide screens.
+Use plain Markdown — the `* TOC` line is a list item and `{:toc}`
+is the Kramdown attribute that turns it into a generated TOC at
+build time.
 
 ### 8. Write the file and confirm
 

@@ -6,13 +6,13 @@ tags: [python, fastapi, redis, performance]
 description: A minimal pattern for caching slow GET endpoints in FastAPI with Redis, and the gotchas I hit along the way.
 ---
 
+* TOC
+{:toc}
+
 > **TL;DR** — Wrap slow GET handlers with a small decorator that reads
 > from Redis first and falls back to the function. Key on
 > `method + path + sorted query params`. Use a JSON-safe serializer
 > and a sane default TTL.
-
-* TOC
-{:toc}
 
 ## Why
 
