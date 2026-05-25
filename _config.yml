@@ -28,7 +28,7 @@ defaults:
       path:       ''
       type:       posts
     values:
-      layout:     post-with-toc
+      layout:     post
 
 author:
   name:           Paulo Cavalcanti
