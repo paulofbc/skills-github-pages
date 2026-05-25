@@ -2,6 +2,13 @@ source 'https://rubygems.org'
 
 gem 'github-pages', group: :jekyll_plugins
 
+# Ruby 3.4+ removed several stdlibs from default gems that Jekyll 3.x
+# (and its deps like liquid) still require.
+gem 'csv'
+gem 'bigdecimal'
+gem 'base64'
+gem 'logger'
+
 group :jekyll_plugins do
   gem 'jekyll-remote-theme'
   gem 'jekyll-feed'
