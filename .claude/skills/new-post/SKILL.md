@@ -102,6 +102,20 @@ prose — only adjust frontmatter and the leading H1. If the body has no
 TL;DR and looks like it would benefit from one, you may suggest one to
 the user but do not invent content on your own.
 
+**Insert a table-of-contents marker** so the post gets a floating TOC
+(see `_layouts/post-with-toc.html`). Add these two lines on their own,
+separated by blank lines from surrounding content:
+
+```markdown
+* TOC
+{:toc}
+```
+
+Placement: right after the TL;DR blockquote if one exists; otherwise
+at the very top of the body, before the first heading. Kramdown
+expands the marker into a `<ul id="markdown-toc">` at build time, and
+the post layout's CSS floats it on wide screens.
+
 ### 8. Write the file and confirm
 
 - Write to `_posts/YYYY-MM-DD-<slug>.md`.

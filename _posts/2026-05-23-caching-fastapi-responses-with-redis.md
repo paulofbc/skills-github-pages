@@ -11,6 +11,9 @@ description: A minimal pattern for caching slow GET endpoints in FastAPI with Re
 > `method + path + sorted query params`. Use a JSON-safe serializer
 > and a sane default TTL.
 
+* TOC
+{:toc}
+
 ## Why
 
 A read-heavy endpoint was being called 600+ times per second and hitting
