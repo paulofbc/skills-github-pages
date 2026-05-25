@@ -15,22 +15,14 @@
   .layout-post-with-toc #markdown-toc a:hover { text-decoration: underline; }
 
   @media (min-width: 1400px) {
-    /* Hydejack caps .content at 54rem; widen it for this layout so the
-       article and TOC sidebar both have room. */
-    main.content.layout-post-with-toc {
-      max-width: 78rem;
-    }
-
-    /* Side-by-side: article body in column 1, TOC in column 2. */
     .layout-post-with-toc article.page.post {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 15rem;
-      column-gap: 2.5rem;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      column-gap: 2rem;
     }
     .layout-post-with-toc article.page.post > * {
       grid-column: 1;
       min-width: 0;
-      overflow-wrap: break-word;
     }
     .layout-post-with-toc article.page.post > #markdown-toc {
       grid-column: 2;
@@ -44,15 +36,6 @@
       font-size: 0.85rem;
       background: var(--body-bg);
       z-index: 10;
-    }
-
-    /* Hydejack stretches the post H1 beyond its column at ≥104rem
-       (width: calc(100% + 50vw - 32rem); font-size: 3rem) — undo that
-       here so the title stays inside the narrower text column. */
-    .layout-post-with-toc h1.post-title {
-      width: auto !important;
-      font-size: 2.2rem !important;
-      line-height: 1.25 !important;
     }
   }
 </style>
